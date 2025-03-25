@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sidebar {
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.sidebar-header {
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+}
+
+.sidebar-content {
+  padding: 10px;
+}
+
+.main-content {
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.expense-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.expense-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.toggle-sidebar-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #343a40;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-link.active {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.nav-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.collapsed .nav-text {
+  display: none;
+}
+
+.collapsed .nav-icon {
+  margin-right: 0;
+} 
