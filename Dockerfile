@@ -1,20 +1,15 @@
-# 1. Specify the base image
-FROM node:18-alpine
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:17-jdk-slim
 
-# 2. Set the working directory inside the container
-WORKDIR /usr/src/app
+# Set the working directory in the container
+WORKDIR /app
 
-# 3. Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy the source code and libraries to the container
+COPY src ./src
+COPY lib ./lib
 
-# 4. Install project dependencies
-RUN npm install
+# Compile the Java code
+RUN javac -d bin -cp "lib/*" $(find src -name "*.java")
 
-# 5. Copy the rest of your application's source code
-COPY . .
-
-# 6. Expose the port your app runs on
-EXPOSE 3000
-
-# 7. Specify the command to run your application
-CMD [ "node", "server.js" ]
+# Define the command to run your application
+CMD ["java", "-cp", "bin:lib/*", "F_Expense_Tracker.Main"]
