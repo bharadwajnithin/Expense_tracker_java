@@ -1,4 +1,4 @@
-# Expense Tracker Application
+----------------------------------- Expense Tracker Application-------------------------------------
 
 A full-stack web application for tracking expenses with different currency types, visualizing expense statistics, and generating reports.
 
