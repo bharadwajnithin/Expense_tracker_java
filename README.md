@@ -2,7 +2,7 @@
 
 A full-stack web application for tracking expenses with different currency types, visualizing expense statistics, and generating reports.
 
-## Features
+## Features   
 
 1. **Expense Management**
    - Add, edit, and delete expenses
